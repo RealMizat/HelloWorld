@@ -1,0 +1,55 @@
+mizat@Haunter:~$ inxi
+CPU~6 core AMD FX-6350 Six-Core (-MCP-) speed/max~1514/3900 MHz Kernel~4.15.0-43-generic x86_64 Up~13:48 Mem~2945.1/15938.0MB HDD~1250.3GB(4.4% used) Procs~231 Client~Shell inxi~2.3.56  
+ 
+ 
+ 
+ mizat@Haunter:~$ inxi -Fxz
+System:    Host: Haunter Kernel: 4.15.0-43-generic x86_64 bits: 64 gcc: 7.3.0
+           Desktop: Cinnamon 3.8.9 (Gtk 3.22.30-1ubuntu1)
+           Distro: Linux Mint 19 Tara
+Machine:   Device: desktop Mobo: ASUSTeK model: M5A97 R2.0 v: Rev 1.xx serial: N/A
+           UEFI: American Megatrends v: 2603 date: 06/26/2015
+CPU:       6 core AMD FX-6350 Six-Core (-MCP-) 
+           arch: Bulldozer rev.0 cache: 12288 KB
+           
+           flags: (lm nx sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3 svm) bmips: 50712
+           clock speeds: max: 3900 MHz 1: 1516 MHz 2: 1505 MHz 3: 2038 MHz
+           4: 1673 MHz 5: 1516 MHz 6: 1515 MHz
+Graphics:  Card: Advanced Micro Devices [AMD/ATI] Cape Verde PRO [Radeon HD 7750/8740 / R7 250E]
+           bus-ID: 07:00.0
+           Display Server: x11 (X.Org 1.19.6 )
+           drivers: ati,radeon (unloaded: modesetting,fbdev,vesa)
+           Resolution: 1920x1080@60.00hz
+           OpenGL: renderer: AMD CAPE VERDE (DRM 2.50.0 / 4.15.0-43-generic, LLVM 6.0.0)
+           version: 4.5 Mesa 18.0.5 Direct Render: Yes
+Audio:     Card-1 Advanced Micro Devices [AMD/ATI] SBx00 Azalia (Intel HDA)
+           driver: snd_hda_intel bus-ID: 00:14.2
+           Card-2 Advanced Micro Devices [AMD/ATI] Cape Verde/Pitcairn HDMI Audio [Radeon HD 7700/7800 Series]
+           driver: snd_hda_intel bus-ID: 07:00.1
+           Card-3 Creative Labs Sound Core3D [Sound Blaster Recon3D / Z-Series]
+           driver: snd_hda_intel bus-ID: 05:00.0
+           Sound: Advanced Linux Sound Architecture v: k4.15.0-43-generic
+Network:   Card: Realtek RTL8111/8168/8411 PCIE Gigabit Ethernet Controller
+           driver: r8169 v: 2.3LK-NAPI port: e000 bus-ID: 02:00.0
+           IF: enp2s0 state: up speed: 1000 Mbps duplex: full mac: <filter>
+Drives:    HDD Total Size: 1250.3GB (4.4% used)
+           ID-1: /dev/sda model: ST1000DM010 size: 1000.2GB
+           ID-2: /dev/sdb model: Samsung_SSD_860 size: 250.1GB
+Partition: ID-1: / size: 123G used: 52G (45%) fs: ext4 dev: /dev/sda5
+RAID:      No RAID devices: /proc/mdstat, md_mod kernel module present
+Sensors:   System Temperatures: cpu: 13.2C mobo: N/A gpu: 29.0
+           Fan Speeds (in rpm): cpu: 0
+Info:      Processes: 229 Uptime: 13:48 Memory: 2939.1/15938.0MB
+           Init: systemd runlevel: 5 Gcc sys: 7.3.0
+           Client: Shell (bash 4.4.191) inxi: 2.3.56 
+
+
+#Linux Error I am having while updating
+mizat@Haunter:~$ sudo apt update
+[sudo] password for mizat: 
+E: Malformed entry 2 in list file /etc/apt/sources.list.d/additional-repositories.list (Suite)
+E: The list of sources could not be read.
+mizat@Haunter:~$ sudo apt update
+E: Malformed entry 2 in list file /etc/apt/sources.list.d/additional-repositories.list (Suite)
+E: The list of sources could not be read.
+#Just showing I tried it twice in a row and got the same error in the GUI.I was having an error code for Wine Key before hand (previous night)  I ended up finding it and it is OK. I do not know much about ect/source.list.d or anything really, besides it changes the text dependng on what your doing. I searched and could not find any E:2 line 2 code as it was refered to in the GUI error box. Any I did were not for Mint and very outdated.
