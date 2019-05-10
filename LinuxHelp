@@ -52,4 +52,8 @@ E: The list of sources could not be read.
 mizat@Haunter:~$ sudo apt update
 E: Malformed entry 2 in list file /etc/apt/sources.list.d/additional-repositories.list (Suite)
 E: The list of sources could not be read.
+
 #Just showing I tried it twice in a row and got the same error in the GUI.I was having an error code for Wine Key before hand (previous night)  I ended up finding it and it is OK. I do not know much about ect/source.list.d or anything really, besides it changes the text dependng on what your doing. I searched and could not find any E:2 line 2 code as it was refered to in the GUI error box. Any I did were not for Mint and very outdated.
+
+#OK so I got a window with key relase and wine key files in them to repair them and they are in home/mizat It said they were read only and could be opened in libre office. 
+The lock file could not be created for exclusive access by LibreOffice, due to missing permission to create a lock file on that file location or lack of free disk space.
